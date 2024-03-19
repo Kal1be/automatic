@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=Karla:ital,wght@0,200..800;1,200..800&family=Nosifer&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.title{
+font-family: "Ewert",sans-serif;
+font-size: 24px;
+}
+
+
+ul li{
+  font-family: "Karla",sans-serif;
+}
+.my-bg{
+  background: linear-gradient(rgba(0, 0, 0, 0.338),rgba(0, 0, 0, 0.55),black);
+}
+
+@media(min-width:756px){
+  #my-icon{
+    display: none;
+  }
+}
+
+
+@media (max-width:756px){
+  
+.title{
+  font-family: "Ewert",sans-serif;
+  font-size: 20px;
+  }
+  #nav{
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    opacity: 1;
+
+  }
+
+  #hidden{
+    opacity: 0;
+    transition: 2s linear;
+    display: none;
+
+  }
+
+  #nav li{
+    padding: 15px 10px;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+  }
+}
+
+.my-carousel button{
+z-index: 1;
+background-color: rgb(122, 82, 7);
+filter: opacity(.7);
+}
+
+.my-carouse button{
+  z-index: 0 !important;
+}
